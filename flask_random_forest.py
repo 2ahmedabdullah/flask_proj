@@ -1,6 +1,7 @@
 import pickle
 from flask import Flask, request
 import numpy as np
+import pandas as pd
 
 
 with open('./project/random_forest.pkl', 'rb') as f:
