@@ -45,7 +45,7 @@ def predict_iris():
     return str(prediction)
 
 
-@app.route('/predict_from_df', method = ['POST'])
+@app.route('/predict_from_df', methods = ['POST'])
 def predict_iris_df():
     '''Example end point returning a prediction
     ---
