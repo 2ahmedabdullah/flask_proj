@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 
 
-with open('./project/random_forest.pkl', 'rb') as f:
+with open('./rf.pkl', 'rb') as f:
   model = pickle.load(f)
 
 app = Flask(__name__)
@@ -61,8 +61,8 @@ def predict_iris_df():
 
 
 if __name__ == '__main__':
-    app.run(port=8000)
+    app.run()
   
 
   
-#URL: http://127.0.0.1:8000/apidocs
+#URL: localhost:5000/apidocs
